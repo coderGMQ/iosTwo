@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindingViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f3w-Pi-xGL">
+                    <rect key="frame" x="0.0" y="20" width="375" height="102"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="起始地址:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qji-gp-sqN">
+                            <rect key="frame" x="10" y="10" width="70" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="eFG-p1-hXa"/>
+                                <constraint firstAttribute="width" constant="70" id="mn4-TR-56S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择起始地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-tC-pKV">
+                            <rect key="frame" x="90" y="10" width="275" height="40"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="hNH-FG-d2B" appends="YES" id="oOE-5H-WP6"/>
+                            </connections>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-Yg-aB2">
+                            <rect key="frame" x="0.0" y="50" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Qyg-hq-yKB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="到站地址:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dh-iH-WIZ">
+                            <rect key="frame" x="10" y="51" width="70" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择到站地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdU-uh-qEL">
+                            <rect key="frame" x="90" y="51" width="275" height="40"/>
+                            <gestureRecognizers/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="PSa-hW-Npf" appends="YES" id="int-6Z-BvA"/>
+                            </connections>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Nfb-Yg-aB2" secondAttribute="trailing" id="B8R-OS-a8X"/>
+                        <constraint firstItem="P7b-tC-pKV" firstAttribute="top" secondItem="Qji-gp-sqN" secondAttribute="top" id="BVL-Iz-THe"/>
+                        <constraint firstItem="P7b-tC-pKV" firstAttribute="leading" secondItem="Qji-gp-sqN" secondAttribute="trailing" constant="10" id="ChZ-vd-D6K"/>
+                        <constraint firstItem="Qji-gp-sqN" firstAttribute="leading" secondItem="f3w-Pi-xGL" secondAttribute="leading" constant="10" id="UsY-7f-yvz"/>
+                        <constraint firstItem="PdU-uh-qEL" firstAttribute="leading" secondItem="P7b-tC-pKV" secondAttribute="leading" id="X1m-dD-H6o"/>
+                        <constraint firstItem="5dh-iH-WIZ" firstAttribute="height" secondItem="Qji-gp-sqN" secondAttribute="height" id="YmA-LH-UoW"/>
+                        <constraint firstItem="PdU-uh-qEL" firstAttribute="height" secondItem="P7b-tC-pKV" secondAttribute="height" id="eau-c9-I9W"/>
+                        <constraint firstItem="Qji-gp-sqN" firstAttribute="top" secondItem="f3w-Pi-xGL" secondAttribute="top" constant="10" id="fXO-nl-h92"/>
+                        <constraint firstItem="PdU-uh-qEL" firstAttribute="top" secondItem="5dh-iH-WIZ" secondAttribute="top" id="hIa-5w-bSW"/>
+                        <constraint firstItem="P7b-tC-pKV" firstAttribute="height" secondItem="Qji-gp-sqN" secondAttribute="height" id="hwQ-kX-wh8"/>
+                        <constraint firstItem="Nfb-Yg-aB2" firstAttribute="leading" secondItem="f3w-Pi-xGL" secondAttribute="leading" id="l6a-24-9nj"/>
+                        <constraint firstItem="PdU-uh-qEL" firstAttribute="width" secondItem="P7b-tC-pKV" secondAttribute="width" id="n8Q-r3-tXd"/>
+                        <constraint firstItem="5dh-iH-WIZ" firstAttribute="leading" secondItem="Qji-gp-sqN" secondAttribute="leading" id="obh-C5-pbC"/>
+                        <constraint firstItem="5dh-iH-WIZ" firstAttribute="top" secondItem="Nfb-Yg-aB2" secondAttribute="bottom" id="pBn-EB-tVt"/>
+                        <constraint firstItem="Nfb-Yg-aB2" firstAttribute="top" secondItem="Qji-gp-sqN" secondAttribute="bottom" id="sPY-5u-4zp"/>
+                        <constraint firstItem="5dh-iH-WIZ" firstAttribute="width" secondItem="Qji-gp-sqN" secondAttribute="width" id="ufD-dT-4Mo"/>
+                        <constraint firstAttribute="height" constant="102" id="v8Y-GK-I7f"/>
+                        <constraint firstAttribute="trailing" secondItem="P7b-tC-pKV" secondAttribute="trailing" constant="10" id="xGG-u8-r6L"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYx-Yv-5Eh">
+                    <rect key="frame" x="20" y="142" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="75a-9C-Thm"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="checkBinding:" destination="-1" eventType="touchUpInside" id="JCb-1m-riY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="jYx-Yv-5Eh" firstAttribute="top" secondItem="f3w-Pi-xGL" secondAttribute="bottom" constant="20" id="0tL-7T-l1c"/>
+                <constraint firstItem="jYx-Yv-5Eh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="AfF-tX-PuG"/>
+                <constraint firstItem="f3w-Pi-xGL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="B1V-Pc-cQr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="jYx-Yv-5Eh" secondAttribute="trailing" constant="20" id="fio-ua-jdw"/>
+                <constraint firstItem="f3w-Pi-xGL" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="m9t-fY-2mq"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="f3w-Pi-xGL" secondAttribute="trailing" id="zC7-UG-tZk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+        <tapGestureRecognizer id="hNH-FG-d2B">
+            <connections>
+                <action selector="tapInBinding:" destination="-1" id="Cfb-hw-PwA"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="PSa-hW-Npf">
+            <connections>
+                <action selector="tapInBinding:" destination="-1" id="Jde-ns-sFJ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

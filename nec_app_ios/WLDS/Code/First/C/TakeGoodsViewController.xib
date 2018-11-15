@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakeGoodsViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ar-cs-BHw" userLabel="粗线">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="8"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="qJl-pY-upG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEA-7e-U44">
+                    <rect key="frame" x="40" y="228" width="295" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="查看我的收货单"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.0" green="0.49803921568627452" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickButtonImTakeGoods:" destination="-1" eventType="touchUpInside" id="Bh5-in-feJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ael-NW-T1Z">
+                    <rect key="frame" x="40" y="88" width="295" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZyV-q2-Lgw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="收货"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.0" green="0.49803921568627452" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickButtonImTakeGoods:" destination="-1" eventType="touchUpInside" id="GCI-VP-csu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMh-3n-7KG">
+                    <rect key="frame" x="40" y="158" width="295" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="查看我的代收货单"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderUIColor">
+                            <color key="value" red="0.0" green="0.49803921568627452" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickButtonImTakeGoods:" destination="-1" eventType="touchUpInside" id="zBH-ET-2wk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Ar-cs-BHw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AeU-ct-HcD"/>
+                <constraint firstItem="Ael-NW-T1Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="DuH-6T-hDR"/>
+                <constraint firstItem="uMh-3n-7KG" firstAttribute="height" secondItem="Ael-NW-T1Z" secondAttribute="height" id="VV4-xw-Kmf"/>
+                <constraint firstItem="Ael-NW-T1Z" firstAttribute="top" secondItem="1Ar-cs-BHw" secondAttribute="bottom" constant="80" id="Whw-Gq-lzm"/>
+                <constraint firstAttribute="trailing" secondItem="Ael-NW-T1Z" secondAttribute="trailing" constant="40" id="YTW-gT-xlT"/>
+                <constraint firstItem="qEA-7e-U44" firstAttribute="width" secondItem="uMh-3n-7KG" secondAttribute="width" id="Yzi-W2-Y3e"/>
+                <constraint firstItem="uMh-3n-7KG" firstAttribute="top" secondItem="Ael-NW-T1Z" secondAttribute="bottom" constant="20" id="aFO-aC-ZQa"/>
+                <constraint firstAttribute="trailing" secondItem="1Ar-cs-BHw" secondAttribute="trailing" id="bdg-Ot-EsM"/>
+                <constraint firstItem="qEA-7e-U44" firstAttribute="top" secondItem="uMh-3n-7KG" secondAttribute="bottom" constant="20" id="cY7-xM-slo"/>
+                <constraint firstItem="qEA-7e-U44" firstAttribute="height" secondItem="uMh-3n-7KG" secondAttribute="height" id="hne-CO-PJU"/>
+                <constraint firstItem="uMh-3n-7KG" firstAttribute="leading" secondItem="Ael-NW-T1Z" secondAttribute="leading" id="kwu-dn-pXO"/>
+                <constraint firstItem="uMh-3n-7KG" firstAttribute="width" secondItem="Ael-NW-T1Z" secondAttribute="width" id="qmh-TB-9QN"/>
+                <constraint firstItem="qEA-7e-U44" firstAttribute="leading" secondItem="uMh-3n-7KG" secondAttribute="leading" id="wdH-FQ-AJB"/>
+                <constraint firstItem="1Ar-cs-BHw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zI8-n4-E2K"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

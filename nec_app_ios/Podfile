@@ -1,0 +1,6 @@
+target ‘WLDS’ do
+    platform :ios, '8.0'
+    pod 'JPush'
+    pod 'AMapLocation'
+    pod 'SDWebImage', '~> 3.7.2'
+end
